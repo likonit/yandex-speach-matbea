@@ -85,7 +85,7 @@ function getTextBalance(name, type, obj) {
             }()}`+ " с предыдущей проверки. "
             obj.last = newPrice
 
-            if (obj.money*procentOldWin <= 0) text += `Если продашь, то проебёшь ${Math.abs((obj.money*procentOldWin).toFixed(2))} баксов.`
+            if (obj.money*procentOldWin <= 0) text += `Если продашь, то потеряешь ${Math.abs((obj.money*procentOldWin).toFixed(2))} баксов.`
             if (obj.money*procentOldWin > 0) text += `Будешь рич бич и заработаешь ${Math.abs((obj.money*procentOldWin).toFixed(2))} баксов.`
     
             res(text)
